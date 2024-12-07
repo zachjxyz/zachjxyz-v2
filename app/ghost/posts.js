@@ -1,5 +1,5 @@
-const GHOST_API = process.env.NEXT_PUBLIC_GHOST_API_KEY;
-const GHOST_URL = process.env.NEXT_PUBLIC_GHOST_URL;
+const GHOST_API = process.env.NEXT_PRIVATE_GHOST_API_KEY;
+const GHOST_URL = process.env.NEXT_PRIVATE_GHOST_URL;
 
 /**
  * Fetch all posts with Incremental Static Regeneration (ISR) enabled.
