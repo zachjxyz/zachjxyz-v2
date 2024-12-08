@@ -1,6 +1,6 @@
 "use client";
 
-import addScrollspy from "@/utils/addScrollspy";
+import addScrollspy from "@/utils/addScrollSpy";
 import { init_classic_menu_resize } from "@/utils/menuToggle";
 import { scrollToElement } from "@/utils/scrollToElement";
 import { closeMobileMenu } from "@/utils/toggleMobileMenu";
