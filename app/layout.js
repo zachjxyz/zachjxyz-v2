@@ -1,3 +1,5 @@
+"use client";
+
 // React-specific imports
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
