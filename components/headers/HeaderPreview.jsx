@@ -1,12 +1,12 @@
 "use client";
 import { allHomes, menuItems } from "@/data/menu";
-import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
+import { toggleMobileMenu } from "@/utils/toggleMobileMenu";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import LanguageSelect from "./components/LanguageSelect";
-import { init_classic_menu_resize } from "@/utlis/menuToggle";
-import { scrollToElement } from "@/utlis/scrollToElement";
+import LanguageSelect from @/components/LanguageSelect";
+import { init_classic_menu_resize } from "@/utils/menuToggle";
+import { scrollToElement } from "@/utils/scrollToElement";
 export default function HeaderPreview() {
   const [menuOpen, setMenuOpen] = useState([-1, -1]);
 

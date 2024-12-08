@@ -1,6 +1,6 @@
 "use client";
 import AnimatedText from "@/components/common/AnimatedText";
-import { scrollToElement } from "@/utlis/scrollToElement";
+import { scrollToElement } from "../utils/scrollToElement";
 import { useEffect, useState } from "react";
 
 import ModalVideo from "react-modal-video";

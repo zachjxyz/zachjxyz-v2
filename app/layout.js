@@ -13,9 +13,9 @@ import "tippy.js/dist/tippy.css";
 import "jarallax/dist/jarallax.min.css";
 
 // Custom utility imports
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-import { init_wow } from "@/utlis/initWowjs";
-import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import { parallaxMouseMovement, parallaxScroll } from "../utils/parallax";
+import { init_wow } from "../utils/initWowjs";
+import { headerChangeOnScroll } from "../utils/changeHeaderOnScroll";
 
 // Global CSS styles
 import "../public/assets/css/styles.css";

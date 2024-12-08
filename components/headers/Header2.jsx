@@ -1,6 +1,6 @@
 "use client";
-import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
-import Nav from "./components/Nav";
+import { toggleMobileMenu } from "@/utils/toggleMobileMenu";
+import Nav from "@/components/Nav";
 
 const links = [
   { href: "#home", text: "Home", className: "active" },

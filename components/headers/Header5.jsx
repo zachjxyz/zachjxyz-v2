@@ -1,6 +1,6 @@
 "use client";
-import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
-import Nav from "./components/Nav";
+import { toggleMobileMenu } from "@/utils/toggleMobileMenu";
+import Nav from "@/components/Nav";
 
 import Image from "next/image";
 export default function Header5({ links }) {

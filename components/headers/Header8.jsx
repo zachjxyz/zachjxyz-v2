@@ -1,6 +1,6 @@
 "use client";
-import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
-import Nav from "./components/Nav";
+import { toggleMobileMenu } from "@/utils/toggleMobileMenu";
+import Nav from @/components/Nav";
 
 const links = [
   { href: "/", text: "Home", className: "active", dataBtnAnimate: "y" },
@@ -12,7 +12,7 @@ const links = [
 ];
 
 import Image from "next/image";
-import LanguageSelect from "./components/LanguageSelect";
+import LanguageSelect from @/components/LanguageSelect";
 import Link from "next/link";
 
 export default function Header8({ links }) {

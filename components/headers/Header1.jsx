@@ -1,8 +1,8 @@
 "use client";
-import Nav from "./components/Nav";
-import LanguageSelect from "./components/LanguageSelect";
+import Nav from "@/components/Nav";
+import LanguageSelect from "@/components/LanguageSelect";
 import Image from "next/image";
-import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
+import { toggleMobileMenu } from "@/utils/toggleMobileMenu";
 import Link from "next/link";
 
 export default function Header1({ links }) {

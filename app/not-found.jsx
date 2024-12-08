@@ -1,7 +1,7 @@
-import Footer1 from "@/components/footers/Footer1";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import Footer2 from "@/components/footers/Footer2";
 export const metadata = {
   title:
     "Page Not Found || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
@@ -112,7 +112,7 @@ export default function MainAboutPage1() {
             </main>
           </>
 
-          <Footer1 />
+          <Footer2 />
         </div>{" "}
       </div>
     </>
