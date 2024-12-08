@@ -10,8 +10,8 @@ export default function Blog() {
       <div className="row">
         <div className="col-8 col-sm-7">
           <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-            <span className="d-block wow fadeRotateIn"> Latest </span>
-            <span className="d-block text-end wow fadeRotateIn"> News </span>
+            <span className="d-block wow fadeRotateIn"> Recent </span>
+            <span className="d-block text-end wow fadeRotateIn"> Articles </span>
           </h3>
         </div>
       </div>

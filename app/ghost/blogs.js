@@ -6,7 +6,7 @@ const GHOST_URL = process.env.NEXT_PUBLIC_GHOST_URL;
  */
 export async function getPosts() {
   const response = await fetch(
-    `${GHOST_URL}/ghost/api/content/posts/?key=${GHOST_API}&limit=3`,
+    `${GHOST_URL}/ghost/api/content/posts/?key=${GHOST_API}`,
     {
       next: { revalidate: 60 }, // Revalidate every 60 seconds
     },

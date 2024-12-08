@@ -7990,7 +7990,7 @@ img.services-image {
 
 .portfolio-3-image {
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 5px;
   isolation: isolate;
   transform: translateZ(0);
 }

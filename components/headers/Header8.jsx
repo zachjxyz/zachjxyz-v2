@@ -3,13 +3,14 @@ import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import Nav from "./components/Nav";
 
 const links = [
-  { href: "#home", text: "Home", className: "active", dataBtnAnimate: "y" },
-  { href: "#about", text: "About", dataBtnAnimate: "y" },
-  { href: "#services", text: "Services", dataBtnAnimate: "y" },
-  { href: "#portfolio", text: "Portfolio", dataBtnAnimate: "y" },
-  { href: "#blog", text: "Blog", dataBtnAnimate: "y" },
-  { href: "#contact", text: "Contact", dataBtnAnimate: "y" },
+  { href: "/", text: "Home", className: "active", dataBtnAnimate: "y" },
+  { href: "/about", text: "About", dataBtnAnimate: "y" },
+  { href: "/services", text: "Services", dataBtnAnimate: "y" },
+  { href: "/portfolio", text: "Portfolio", dataBtnAnimate: "y" },
+  { href: "/blog", text: "Blog", dataBtnAnimate: "y" },
+  { href: "/contact", text: "Contact", dataBtnAnimate: "y" },
 ];
+
 import Image from "next/image";
 import LanguageSelect from "./components/LanguageSelect";
 import Link from "next/link";
@@ -21,8 +22,8 @@ export default function Header8({ links }) {
               If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
               image size for support of retina screens. See details in the template documentation. *) */}
       <div className="nav-logo-wrap local-scroll">
-        <a href="#top" className="logo">
-          Zach Johnson
+        <a href="#" className="logo">
+          Zach J
         </a>
       </div>
       {/* Mobile Menu Button */}

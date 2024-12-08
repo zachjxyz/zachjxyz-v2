@@ -167,7 +167,7 @@ export default function Home8({
                 ) : (
                   <>
                     <Link
-                      href={`/modern-services${dark ? "-dark" : ""}`}
+                      href={`/services${dark ? "-dark" : ""}`}
                       className="link-hover-anim align-middle"
                       data-link-animate="y"
                     >
@@ -234,7 +234,7 @@ export default function Home8({
                   ) : (
                     <>
                       <Link
-                        href={`/modern-contact${dark ? "-dark" : ""}`}
+                        href={`/contact${dark ? "-dark" : ""}`}
                         className="btn btn-mod btn-border btn-medium btn-circle"
                         data-btn-animate="y"
                       >
@@ -299,7 +299,7 @@ export default function Home8({
                 ) : (
                   <>
                     <Link
-                      href={`/modern-portfolio${dark ? "-dark" : ""}`}
+                      href={`/portfolio${dark ? "-dark" : ""}`}
                       className="link-hover-anim align-middle"
                       data-link-animate="y"
                     >

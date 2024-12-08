@@ -9,12 +9,12 @@ import Image from "next/image";
 import Link from "next/link";
 const onePage = false;
 const dark = false;
+
 export const metadata = {
-  title:
-    "Modern About || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "ABOUT ME | ZACH J | Strategy, Technology, & Psychology",
+  description: "Your last strategy consultant",
 };
+
 export default function ModernAboutPage() {
   return (
     <>

@@ -606,10 +606,6 @@
     bottom: -125px;
     right: -35px;
   }
-
-  .portfolio-3-image {
-    border-radius: 30px;
-  }
 }
 
 @media only screen and (max-width: 767px) {

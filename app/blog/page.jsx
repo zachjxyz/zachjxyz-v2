@@ -1,14 +1,16 @@
+import { getPosts } from "@/app/ghost/blogs"; // Adjust the path if necessary
 import Pagination from "@/components/common/Pagination";
 import Footer2 from "@/components/footers/Footer2";
 import Header8 from "@/components/headers/Header8";
 import Form5 from "@/components/newsletterForms/Form5";
 
-import { blogs12 } from "@/data/blogs";
-
 import { modernMultipage } from "@/data/menu";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
+const dark = false;
+
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
@@ -17,12 +19,14 @@ const ParallaxContainer = dynamic(
 );
 
 export const metadata = {
-  title:
-    "Modern Blogs || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "BLOG | ZACH J | Strategy, Technology, & Psychology",
+  description: "Your last strategy consultant",
 };
-export default function ModernBlogPage() {
+
+export default async function ModernBlogPage() {
+  // Fetch the posts from your Ghost blog
+  const posts = await getPosts();
+
   return (
     <>
       <div className="theme-modern">
@@ -70,10 +74,7 @@ export default function ModernBlogPage() {
                 <div className="row">
                   <div className="col-9 col-sm-8">
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
-                      <span className="d-block wow fadeRotateIn">
-                        {" "}
-                        Selected{" "}
-                      </span>
+                      <span className="d-block wow fadeRotateIn">Selected</span>
                       <span className="d-block text-end wow fadeRotateIn">
                         Works
                       </span>
@@ -105,33 +106,32 @@ export default function ModernBlogPage() {
                 <div className="container position-relative">
                   {/* Blog Grid */}
                   <div className="row gx-5 mt-n50 mt-sm-n30 mb-50 mb-sm-30">
-                    {/* Post Item */}
-                    {blogs12.map((elm, i) => (
+                    {/* Map over the fetched posts */}
+                    {posts.map((post, i) => (
                       <div
-                        key={i}
+                        key={post.id}
                         className="post-prev-2 col-md-6 col-lg-4 mt-50 mt-sm-30"
                       >
                         <div className="post-prev-2-img">
-                          <Link href={`/modern-blog-single/${elm.id}`}>
+                          <Link href={`/blog/${post.slug}`}>
                             <Image
-                              src={elm.imgSrc}
+                              src={post.feature_image || "/default-image.jpg"}
                               width={700}
                               height={479}
-                              alt="Image Description"
+                              alt={post.title}
                             />
                           </Link>
                         </div>
                         <h3 className="post-prev-2-title">
-                          <Link href={`/modern-blog-single/${elm.id}`}>
-                            {elm.title}
+                          <Link href={`/blog/${post.slug}`}>
+                            {post.title}
                           </Link>
                         </h3>
-                        <div className="post-prev-2-info">{elm.date}</div>
+                        <div className="post-prev-2-info">
+                          {new Date(post.published_at).toLocaleDateString()}
+                        </div>
                       </div>
                     ))}
-                    {/* End Post Item */}
-
-                    {/* End Post Item */}
                   </div>
                   {/* End Blog Grid */}
                   {/* Pagination */}

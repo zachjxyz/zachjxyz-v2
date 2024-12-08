@@ -3,7 +3,7 @@ import Footer2 from "@/components/footers/Footer2";
 import Header8 from "@/components/headers/Header8";
 import Home8 from "@/components/homes/home-8";
 import Hero1 from "@/components/homes/home-8/heros/Hero1";
-import { modernMultipage } from "@/data/menu";
+import { modernMultipage } from "@/data/menu";  
 
 export const metadata = {
   title: "HOME | Zach J | Strategy, Technology, & Psychology",

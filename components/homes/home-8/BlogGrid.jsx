@@ -59,7 +59,7 @@ export default function BlogGrid() {
             `}
           >
             <div className="post-prev-2-img">
-              <Link href={`/${post.slug}`}>
+              <Link href={`/blog/${post.slug}`}>
                 <Image
                   src={post.imageSrc}
                   width={700}
@@ -70,7 +70,7 @@ export default function BlogGrid() {
               </Link>
             </div>
             <h3 className="post-prev-2-title">
-              <Link href={`/${post.slug}`}>{post.title}</Link>
+              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
             </h3>
             <div className="post-prev-2-info">{post.date}</div>
           </div>
