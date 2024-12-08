@@ -4,7 +4,7 @@ import { toggleMobileMenu } from "@/utils/toggleMobileMenu";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import LanguageSelect from @/components/LanguageSelect";
+import LanguageSelect from "@/components/LanguageSelect";
 import { init_classic_menu_resize } from "@/utils/menuToggle";
 import { scrollToElement } from "@/utils/scrollToElement";
 export default function HeaderPreview() {
