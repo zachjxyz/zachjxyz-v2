@@ -1,17 +1,22 @@
-"use client";
+// React-specific imports
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+// Third-party library imports (CSS)
 import "swiper/css";
-import "../public/assets/css/styles.css";
-import "jarallax/dist/jarallax.min.css";
 import "swiper/css/effect-fade";
 import "react-modal-video/css/modal-video.css";
 import "photoswipe/dist/photoswipe.css";
-import { usePathname } from "next/navigation";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-
 import "tippy.js/dist/tippy.css";
+import "jarallax/dist/jarallax.min.css";
+
+// Custom utility imports
+import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+
+// Global CSS styles
+import "../public/assets/css/styles.css";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
