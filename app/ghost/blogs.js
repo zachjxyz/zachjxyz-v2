@@ -1,4 +1,4 @@
-const GHOST_API = process.env.NEXT_PUBLIC_GHOST_API_KEY;
+const GHOST_API = process.env.GHOST_API_KEY;
 const GHOST_URL = process.env.NEXT_PUBLIC_GHOST_URL;
 
 /**
@@ -25,7 +25,7 @@ export async function getPosts() {
  */
 export async function getPostBySlug(slug) {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_GHOST_URL}/ghost/api/content/posts/slug/${slug}/?key=${process.env.NEXT_PUBLIC_GHOST_API_KEY}`,
+    `${GHOST_URL}/ghost/api/content/posts/slug/${slug}/?key=${GHOST_API}`,
     {
       next: { revalidate: 60 }, // Revalidate the page every 60 seconds
     },
